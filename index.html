@@ -62,7 +62,14 @@
           </ul>
 
           <!-- theme toggle -->
-          <!-- <div class="header__theme" id="theme-toggle"></div> -->
+          <div
+            class="header__theme absolute top-6 right-6 text-[1.5rem] cursor-pointer"
+            id="theme-toggle"
+          >
+            <span class="header__theme-icon hidden" id="themeToggleDarkIcon"
+              >🌙</span
+            >
+          </div>
 
           <a href="#" class="header__button button mt-6">Account</a>
         </div>
@@ -76,6 +83,42 @@
       </div>
     </header>
     <!-- ===== HEADER SECTION ===== -->
+
+    <main class="main overflow-hidden">
+      <!-- ===== HOME SECTION ===== -->
+      <section class="home section bg-gray-200">
+        <div class="home__container container grid gap-12">
+          <div class="home__data justify-self-center text-center">
+            <h1 class="home__title section-title">
+              Buy and sell your <br />
+              textbooks for the <br />
+              best price.
+            </h1>
+            <p class="home__text section-text">
+              From applied literature to educational resources, we have a lot of
+              textbooks to offer you. We provide only the best books for rent.
+            </p>
+            <div
+              class="home__form flex justify-between items-center gap-4 p-2 bg-white"
+            >
+              <input
+                type="text"
+                placeholder="Enter ISBN Number"
+                class="home__input w-full h-[55px] pl-2 bg-transparent text-[15px] text-gray-900 font-reguler placeholder:text-gray-600"
+              />
+              <button class="home__button button">Search</button>
+            </div>
+          </div>
+
+          <img
+            src="./src/img/home-img.png"
+            alt=""
+            class="home__img justify-self-center"
+          />
+        </div>
+      </section>
+      <!-- ===== HOME SECTION ===== -->
+    </main>
 
     <!-- ===== SWIPER JS ===== -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
