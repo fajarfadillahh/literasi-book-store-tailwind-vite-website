@@ -47,3 +47,35 @@
 .header.sticky-action {
   @apply bg-gray-100 shadow-[0_2px_12px_rgba(0,0,0,0.1)];
 }
+
+/* ===== ABOUT SECTION ===== */
+.about__content {
+  @apply grid p-2 ring-2 ring-[rgba(0,0,0,0.1)] transition-all duration-300 hover:ring-white hover:bg-white hover:shadow-[0_2px_12px_rgba(0,0,0,0.1)];
+}
+.about__content-overlay {
+  @apply grid py-12 bg-[rgb(233,236,239)];
+}
+.about__content-img {
+  @apply w-[130px] shadow-[8px_8px_12px_rgba(0,0,0,0.2)] justify-self-center;
+}
+.about__content-data {
+  @apply pt-8 pb-4;
+}
+.about__content-title {
+  @apply text-[22px] text-gray-900 font-medium font-title capitalize mb-1;
+}
+.about__content-author {
+  @apply text-[15px] text-gray-600 mb-6;
+}
+.about__content-price {
+  @apply text-[18px] text-green-600 font-semibold;
+}
+/* cutoff content */
+.content-cutoff {
+  --max-line: 1;
+
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--max-line);
+}
