@@ -10,6 +10,12 @@
     <link rel="shortcut icon" href="./src/img/icon.svg" type="image/x-icon" />
     <link rel="apple-touch-icon" href="./src/img/icon.svg" />
 
+    <!-- ===== BOXICONS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
     <!-- ===== SWIPER CSS ===== -->
     <link
       rel="stylesheet"
@@ -19,6 +25,58 @@
     <!-- 🌙 ☀️ -->
   </head>
   <body class="font-text font-reguler bg-gray-100">
+    <!-- ===== HEADER SECTION ===== -->
+    <header
+      class="header fixed w-full top-0 left-0 bg-transparent z-50 transition-all duration-300"
+      id="header"
+    >
+      <div
+        class="header__container container h-24 flex justify-between items-center"
+      >
+        <a
+          href="#"
+          class="header__logo inline-flex items-center gap-2 text-[22px] text-gray-900 font-title font-semibold"
+        >
+          <img
+            src="./src/img/icon.svg"
+            alt=""
+            class="header__logo-icon w-[40px]"
+          />
+          Literasi.
+        </a>
+
+        <div class="header__menu" id="header-menu">
+          <ul class="header__list flex flex-col gap-6">
+            <li class="header__item">
+              <a href="#" class="header__link">Home</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Library</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Bestseller</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Author</a>
+            </li>
+          </ul>
+
+          <!-- theme toggle -->
+          <!-- <div class="header__theme" id="theme-toggle"></div> -->
+
+          <a href="#" class="header__button button mt-6">Account</a>
+        </div>
+
+        <div
+          class="header__toggle inline-flex text-[1.5rem] text-gray-900 cursor-pointer"
+          id="header-toggle"
+        >
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </div>
+    </header>
+    <!-- ===== HEADER SECTION ===== -->
+
     <!-- ===== SWIPER JS ===== -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 

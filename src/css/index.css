@@ -29,3 +29,17 @@
     @apply h-[55px] flex justify-center items-center py-4 px-8 bg-green-600 text-[15px] font-semibold text-white;
   }
 }
+
+/* ===== HEADER SECTION ===== */
+@media screen and (max-width: 767px) {
+  .header__menu {
+    @apply fixed w-[80%] top-28 left-0 right-0 mx-auto text-center p-8 bg-gray-100 shadow-[0_0_12px_rgba(0,0,0,0.1)] transition-all duration-300 opacity-0 scale-y-0 origin-top;
+  }
+}
+.header__link {
+  @apply text-[15px] text-gray-600 hover:text-green-600;
+}
+/* show menu */
+.header__menu.show-menu {
+  @apply opacity-100 scale-y-100;
+}
