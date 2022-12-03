@@ -79,3 +79,14 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: var(--max-line);
 }
+
+/* ==== ABOUT SECTION ===== */
+.about__tags {
+  @apply text-left;
+}
+.about__tags-number {
+  @apply text-[38px] text-gray-900 font-title font-semibold;
+}
+.about__tags-text {
+  @apply text-[14px] text-gray-600;
+}
