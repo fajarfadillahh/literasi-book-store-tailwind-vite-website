@@ -130,3 +130,17 @@
 .testimonial__container .swiper-pagination-bullet-active {
   @apply w-8 h-2 bg-green-600 rounded-full;
 }
+
+/* ===== FOOTER SECTION ===== */
+.footer__data-icon {
+  @apply inline-flex text-[1.5rem] text-green-600;
+}
+.footer__content-title {
+  @apply text-[24px] text-gray-900 font-title font-semibold mb-6;
+}
+.footer__content-list {
+  @apply flex flex-col gap-3;
+}
+.footer__content-link {
+  @apply text-[15px] text-gray-600 hover:text-green-600 hover:underline;
+}
