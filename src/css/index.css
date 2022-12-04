@@ -90,3 +90,43 @@
 .about__tags-text {
   @apply text-[14px] text-gray-600;
 }
+
+/* ===== TESTIMONIAL SECTION ===== */
+.testimonial__content {
+  @apply grid gap-8 p-8 border-2 border-solid border-[rgba(0,0,0,0.1)] transition-all duration-300;
+}
+.testimonial__content-rating {
+  @apply flex items-center gap-2;
+}
+.testimonial__content-star {
+  @apply inline-flex text-[1.5rem] text-yellow-500;
+}
+.testimonial__content-name {
+  @apply text-[22px] text-gray-900 font-title font-semibold mb-1;
+}
+/* text cutoff */
+.testimonial__content-text {
+  --max-line: 5;
+
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--max-line);
+}
+/* swiper active */
+.testimonial__content.swiper-slide-active {
+  @apply border-white bg-white shadow-[0_0_12px_rgba(0,0,0,0.1)];
+}
+/* swiper pagination */
+.testimonial__container {
+  @apply overflow-hidden;
+}
+.testimonial__container .swiper-pagination {
+  @apply static;
+}
+.testimonial__container .swiper-pagination-bullet {
+  @apply w-2 h-2 bg-gray-600 transition-all duration-300;
+}
+.testimonial__container .swiper-pagination-bullet-active {
+  @apply w-8 h-2 bg-green-600 rounded-full;
+}
