@@ -238,9 +238,11 @@
 
       <!-- ===== ABOUT SECTION ===== -->
       <section class="about section">
-        <div class="about__container container grid gap-12">
+        <div
+          class="about__container container grid gap-12 lg:grid-cols-2 lg:items-center"
+        >
           <div
-            class="about__data justify-self-center text-center xs:w-[400px] sm:w-[440px]"
+            class="about__data justify-self-center text-center xs:w-[400px] sm:w-[440px] lg:w-auto lg:justify-self-start lg:text-left lg:order-2"
           >
             <h1 class="about__title section-title">
               Find your Favorite <br />
@@ -252,7 +254,7 @@
               characthers in literature and notable anniversaries.
             </p>
             <div
-              class="about__tags flex justify-center items-center gap-4 mb-8"
+              class="about__tags flex justify-center items-center gap-4 mb-8 lg:justify-start"
             >
               <div>
                 <h3 class="about__tags-number">25+</h3>
@@ -273,7 +275,7 @@
           <img
             src="./src/img/about-img.png"
             alt=""
-            class="about__img justify-self-center xs:w-[400px] sm:w-[440px]"
+            class="about__img justify-self-center xs:w-[400px] sm:w-[440px] lg:w-[480px]"
           />
         </div>
       </section>

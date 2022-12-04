@@ -85,7 +85,7 @@
   @apply text-left;
 }
 .about__tags-number {
-  @apply text-[38px] text-gray-900 font-title font-semibold;
+  @apply text-[38px] text-gray-900 font-title font-semibold lg:text-[42px];
 }
 .about__tags-text {
   @apply text-[14px] text-gray-600;
