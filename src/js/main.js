@@ -25,6 +25,16 @@ function stickyHeader() {
 }
 window.addEventListener("scroll", stickyHeader);
 
+// ===== SCROLLUP SECTION =====
+function scrollUp() {
+  const scrollup = document.getElementById("scroll-up");
+
+  this.scrollY > 250
+    ? scrollup.classList.add("scroll-action")
+    : scrollup.classList.remove("scroll-action");
+}
+window.addEventListener("scroll", scrollUp);
+
 // ===== TESTIMONIAL SWIPER =====
 let swiper = new Swiper(".testimonial-swiper", {
   centeredSlides: true,

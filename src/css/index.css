@@ -144,3 +144,8 @@
 .footer__content-link {
   @apply text-[15px] text-gray-600 hover:text-green-600 hover:underline;
 }
+
+/* ===== SCROLLUP SECTION ===== */
+.scroll-action {
+  @apply bottom-12;
+}
