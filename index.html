@@ -92,11 +92,13 @@
     <main class="main overflow-hidden">
       <!-- ===== HOME SECTION ===== -->
       <section class="home section bg-gray-200">
-        <div class="home__container container grid gap-12">
+        <div
+          class="home__container container grid gap-12 lg:grid-cols-2 lg:items-center"
+        >
           <div
-            class="home__data justify-self-center text-center xs:w-[400px] sm:w-[440px]"
+            class="home__data justify-self-center text-center xs:w-[400px] sm:w-[440px] lg:w-auto lg:justify-self-start lg:text-left"
           >
-            <h1 class="home__title section-title">
+            <h1 class="home__title section-title lg:text-[52px]">
               Buy and sell your <br />
               textbooks for the <br />
               best price.
@@ -106,7 +108,7 @@
               textbooks to offer you. We provide only the best books for rent.
             </p>
             <div
-              class="home__form flex justify-between items-center gap-4 p-2 bg-white"
+              class="home__form flex justify-between items-center gap-4 p-2 bg-white lg:w-[400px]"
             >
               <input
                 type="text"
@@ -120,7 +122,7 @@
           <img
             src="./src/img/home-img.png"
             alt=""
-            class="home__img justify-self-center xs:w-[400px] sm:w-[440px]"
+            class="home__img justify-self-center xs:w-[400px] sm:w-[440px] lg:w-auto"
           />
         </div>
       </section>
