@@ -45,8 +45,13 @@
           Literasi.
         </a>
 
-        <div class="header__menu" id="header-menu">
-          <ul class="header__list flex flex-col gap-6">
+        <div
+          class="header__menu md:flex md:items-center md:gap-6"
+          id="header-menu"
+        >
+          <ul
+            class="header__list flex flex-col gap-6 md:flex-row md:items-center"
+          >
             <li class="header__item">
               <a href="#" class="header__link">Home</a>
             </li>
@@ -71,11 +76,11 @@
             >
           </div>
 
-          <a href="#" class="header__button button mt-6">Account</a>
+          <a href="#" class="header__button button mt-6 md:mt-0">Account</a>
         </div>
 
         <div
-          class="header__toggle inline-flex text-[1.5rem] text-gray-900 cursor-pointer"
+          class="header__toggle inline-flex text-[1.5rem] text-gray-900 cursor-pointer md:hidden"
           id="header-toggle"
         >
           <i class="bx bx-grid-alt"></i>
