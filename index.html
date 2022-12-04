@@ -22,9 +22,22 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
 
+    <!-- On page load or when changing themes, best to add inline in `head` to avoid FOUC -->
+    <script>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+
     <!-- 🌙 ☀️ -->
   </head>
-  <body class="font-text font-reguler bg-gray-100">
+  <body class="font-text font-reguler bg-gray-100 dark:bg-gray-900">
     <!-- ===== HEADER SECTION ===== -->
     <header
       class="header fixed w-full top-0 left-0 bg-transparent z-50 transition-all duration-300"
@@ -35,7 +48,7 @@
       >
         <a
           href="#"
-          class="header__logo inline-flex items-center gap-2 text-[22px] text-gray-900 font-title font-semibold"
+          class="header__logo inline-flex items-center gap-2 text-[22px] text-gray-900 font-title font-semibold dark:text-white"
         >
           <img
             src="./src/img/icon.svg"
@@ -68,10 +81,13 @@
 
           <!-- theme toggle -->
           <div
-            class="header__theme absolute top-6 right-6 text-[1.5rem] cursor-pointer"
+            class="header__theme absolute top-6 right-6 text-[1.5rem] cursor-pointer md:static"
             id="theme-toggle"
           >
             <span class="header__theme-icon hidden" id="themeToggleDarkIcon"
+              >☀️</span
+            >
+            <span class="header__theme-icon hidden" id="themeToggleLightIcon"
               >🌙</span
             >
           </div>
@@ -91,7 +107,7 @@
 
     <main class="main overflow-hidden">
       <!-- ===== HOME SECTION ===== -->
-      <section class="home section bg-gray-200">
+      <section class="home section bg-gray-200 dark:bg-gray-900">
         <div
           class="home__container container grid gap-12 lg:grid-cols-2 lg:items-center"
         >
@@ -108,12 +124,12 @@
               textbooks to offer you. We provide only the best books for rent.
             </p>
             <div
-              class="home__form flex justify-between items-center gap-4 p-2 bg-white lg:w-[400px] xl:w-[460px]"
+              class="home__form flex justify-between items-center gap-4 p-2 bg-white lg:w-[400px] xl:w-[460px] dark:bg-gray-800"
             >
               <input
                 type="text"
                 placeholder="Enter ISBN Number"
-                class="home__input w-full h-[55px] pl-2 bg-transparent text-[15px] text-gray-900 font-reguler placeholder:text-gray-600"
+                class="home__input w-full h-[55px] pl-2 bg-transparent text-[15px] text-gray-900 font-reguler placeholder:text-gray-600 dark:text-white dark:placeholder:text-white"
               />
               <button class="home__button button">Search</button>
             </div>
@@ -522,7 +538,7 @@
       <section class="callback section">
         <div class="callback__container container">
           <div
-            class="callback__wrapper grid grid-rows-2 items-center bg-gray-200 md:grid-rows-none md:grid-cols-2 md:items-center"
+            class="callback__wrapper grid grid-rows-2 items-center bg-gray-200 md:grid-rows-none md:grid-cols-2 md:items-center dark:bg-gray-800"
           >
             <div
               class="callback__data py-12 px-6 justify-self-center xs:w-[400px] sm:w-[440px] md:w-auto md:order-2"
@@ -560,7 +576,7 @@
           <div class="footer__data">
             <a
               href="#"
-              class="footer__data-logo inline-flex items-center gap-2 text-[22px] text-gray-900 font-title font-semibold mb-2"
+              class="footer__data-logo inline-flex items-center gap-2 text-[22px] text-gray-900 font-title font-semibold mb-2 dark:text-white"
             >
               <img
                 src="./src/img/icon.svg"
@@ -623,7 +639,7 @@
         </div>
 
         <p
-          class="footer__copy pt-8 border-t-2 border-solid border-[rgba(0,0,0,0.2)] text-[15px] text-gray-600 text-center leading-text"
+          class="footer__copy pt-8 border-t-2 border-solid border-[rgba(0,0,0,0.2)] text-[15px] text-gray-600 text-center leading-text dark:text-white"
         >
           Copyrights 2022, all rights reseved - Literasi.com | Develop by Fajar
           Fadillah A ❤️
