@@ -37,7 +37,7 @@
   }
 }
 .header__link {
-  @apply text-[15px] text-gray-600 hover:text-green-600;
+  @apply text-[15px] text-gray-900 hover:text-green-600;
 }
 /* show menu */
 .header__menu.show-menu {
@@ -148,4 +148,9 @@
 /* ===== SCROLLUP SECTION ===== */
 .scroll-action {
   @apply bottom-12;
+}
+
+/* ===== ::SELECTION ===== */
+::selection {
+  @apply bg-green-600 text-white;
 }
