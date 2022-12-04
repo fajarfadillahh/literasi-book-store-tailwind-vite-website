@@ -37,7 +37,7 @@
   }
 }
 .header__link {
-  @apply text-[15px] text-gray-900 hover:text-green-600 dark:text-white;
+  @apply text-[15px] text-gray-900 hover:text-green-600 dark:text-white dark:hover:text-green-600;
 }
 /* show menu */
 .header__menu.show-menu {
